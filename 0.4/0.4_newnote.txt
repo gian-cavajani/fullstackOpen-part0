@@ -1,0 +1,10 @@
+new Note
+
+user->browser: User fills the input and clicks the button 
+browser->server: Form data is sent with HTTP POST
+server->browser: it returns status code 302 (asking the browser to reload)
+browser->browser: reloads page
+browser->server: HTTP request, fetching(Stylesheet, Javascript code, Data of notes)
+server->browser: sents main.css, main.js, data.json files
+browser->browser: executes eventhandlers and renders new data.
+browser->user: displays new note to the user.
