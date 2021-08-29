@@ -1,7 +1,7 @@
-new Note SPA
+SPA
 
-user->browser: User fills the input and clicks the button 
-browser->browser: uses js file to push the new note to the note list
-browser->server: Form data(JSON format) is sent with HTTP POST
-server->browser: status code 201(created)
-browser->user: shows the note
+user->browser:Enters the page
+browser->server: request html file
+server->browser: returns index.html 
+browser->browser: executes logic (javascript code)
+browser->user: renders the page 
